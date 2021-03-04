@@ -49,7 +49,6 @@ Only the jumpbox machine can accept connections from the Internet. Access to thi
 - _10.0.0.4_ 
 
 Machines within the network can only be accessed by the jump Box
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address? 
 - _The Elk vm can only be accessed by the Jump box. Ip Address 10.0.0.4_
 
 A summary of the access policies in place can be found in the table below.
@@ -64,7 +63,6 @@ A summary of the access policies in place can be found in the table below.
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because 
-- _TODO: What is the main advantage of automating configuration with Ansible? 
 - _Advantage is that you can put commands into multiple servers from a single playbook_
 
 The playbook implements the following tasks:
@@ -78,7 +76,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![Docker Ps](Images/Docker Ps.png)
+![Docker Ps](Images/Docker_Ps.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -89,12 +87,10 @@ This ELK server is configured to monitor the following machines:
 - _10.2.0.4_
 
 We have installed the following Beats on these machines:
-- _TODO: Specify which Beats you successfully installed_
 - _Filebeat_
 - _Metricbeat_
 
 These Beats allow us to collect the following information from each machine:
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
 - _Filebeat has modules such as 'Sudo command ECS' which allows you to collect data on which 'sudo commands' being executed on your systems_
 - _Metricbeat has modules such as 'File Storage Overview' which dhows metrics for file storage types in your system._
 
@@ -106,7 +102,6 @@ SSH into the control node and follow the steps below:
 - Update the filebeat configuration file to include the IP address of your ELK machine
 - Run the playbook, and navigate to the Filebeat Installation page on the Elk server GUI to check that the installation worked as expected._
 
-_TODO: Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it?_
 - _Filebeat -playbook.yml needs to be copied '/etc/ansible/roles/' directory on your Ansible machine
 - _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
