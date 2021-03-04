@@ -27,7 +27,6 @@ The advantage of a jump box is to give access to the user from a single node tha
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the event logs and system metrics.
 - _Filebeat watches for any log event information in the file system which has been changed and when it has been changed._
 
-- _TODO: What does Metricbeat record?_ 
 - It records machine metrics such as uptime_
 
 The configuration details of each machine may be found below.
