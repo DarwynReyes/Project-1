@@ -45,7 +45,6 @@ The machines on the internal network are not exposed to the public Internet.
 
 Only the jumpbox machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses: 
 - _Your Public IP address_
-- _TODO: Add whitelisted IP addresses_ 
 - _10.0.0.4_ 
 
 Machines within the network can only be accessed by the jump Box
@@ -66,7 +65,6 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 - _Advantage is that you can put commands into multiple servers from a single playbook_
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc.
 - _Install: docker.io_
 - _Install: Pyhton_
 - _Install: Docker Module_
